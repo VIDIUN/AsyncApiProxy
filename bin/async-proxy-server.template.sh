@@ -4,21 +4,21 @@
 # the process monitor. For more configuration options associated with Forever,
 # see: https://github.com/nodejitsu/forever
 #
-# This shell script takes care of starting and stopping a Kaltura Async-api-proxy Service
+# This shell script takes care of starting and stopping a Vidiun Async-api-proxy Service
 #
-# description: Kaltura async API proxy server
+# description: Vidiun async API proxy server
 
 ### BEGIN INIT INFO
-# Provides:            kaltura_async_proxy
+# Provides:            vidiun_async_proxy
 # Required-Start:      $local_fs $remote_fs $network
 # Required-Stop:       $local_fs $remote_fs $network
 # Default-Start:       2 3 4 5
 # Default-Stop:        0 1 6
-# Short-Description:   Start/stop Kaltura Async-api-proxy.
-# Description:         Control the Kaltura Async-api-proxy.
+# Short-Description:   Start/stop Vidiun Async-api-proxy.
+# Description:         Control the Vidiun Async-api-proxy.
 ### END INIT INFO
  
-NAME="Kaltura Async API Proxy Server"
+NAME="Vidiun Async API Proxy Server"
 ASYNC_PROXY_PATH="@ASYNC_API_PROXY_PREFIX@"
 LOG_PATH="@LOG_DIR@"
 NODE_PATH="@NODE_MODULES_PATH@"

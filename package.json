@@ -1,6 +1,6 @@
 {
-	"name": "kaltura-async-proxy-server",
-	"description" : "Kaltura Async API Proxy Server",
+	"name": "vidiun-async-proxy-server",
+	"description" : "Vidiun Async API Proxy Server",
 	"version": "v1.0.10",
 	"engines" : { "node" : ">=6.10.2" },
 	"license": "AGPLv3",
