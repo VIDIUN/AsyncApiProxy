@@ -1,19 +1,19 @@
-require('./lib/utils/KalturaLogger');
+require('./lib/utils/VidiunLogger');
 const AsyncProxyManager = require('./lib/AsyncProxyManager');
 const continuationLocalStorage = require('continuation-local-storage');
-const KalturaAsyncProxyServerValidator = require('./lib/utils/KalturaAsyncProxyServerValidator');
+const VidiunAsyncProxyServerValidator = require('./lib/utils/VidiunAsyncProxyServerValidator');
 
-function KalturaMainProcess(){
+function VidiunMainProcess(){
 	this.start();
 };
 
-KalturaMainProcess.prototype.start = function () {
+VidiunMainProcess.prototype.start = function () {
 
 	this.namespace = continuationLocalStorage.createNamespace('async-proxy-server');//Here just to make sure we create it only once
 	var server = new AsyncProxyManager();
 
 };
 
-module.exports.KalturaMainProcess = KalturaMainProcess;
+module.exports.VidiunMainProcess = VidiunMainProcess;
 
-var KalturaProcess = new KalturaMainProcess();
+var VidiunProcess = new VidiunMainProcess();

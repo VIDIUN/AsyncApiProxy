@@ -2,9 +2,9 @@
   "logger": {
     "debugEnabled": 0,
     "logDir": "@LOG_DIR@",
-    "logName": "kaltura_async_proxy.log",
-    "accessLogName": "kaltura_async_proxy_access.log",
-    "errorLogName": "kaltura_async_proxy_error.log"
+    "logName": "vidiun_async_proxy.log",
+    "accessLogName": "vidiun_async_proxy_access.log",
+    "errorLogName": "vidiun_async_proxy_error.log"
   },
 
   "server": {
